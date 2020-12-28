@@ -41,5 +41,5 @@ mkdir /mnt/supernewdisk
 mount /dev/grp1/lvl1 /mnt/supernewdisk/
 
 mkdir /mnt/share
-mount.cifs //10.0.15.2/mnt ~/mnt/share
-echo “//10.0.15.2/mnt /mnt/share cifs guest, 0 0” >> /etc/fstab
+mount.cifs //10.0.15.2:/home/mirzo/Documetns/share /mnt/share -o guest, iocharset=utf8
+echo “//10.0.15.2:/home/mirzo/Documetns/share /mnt/share user, rw, credentials=/root/ .smbclient 0 0” >> /etc/fstab
